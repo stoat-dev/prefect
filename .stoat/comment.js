@@ -28,7 +28,7 @@ const variants = plugins.static_hosting.pip_freeze.variants;
 		);
 
 		const defaultValue = defaultKey ? `<a href="https://stoat.dev/diffs/github?ghOwner=stoat-dev&ghRepo=prefect&ghBranch=${metadata.github.branch}&ghPullRequest=${metadata.github.pull_request}&ghDefaultBranch=main&files=pip_freeze&variant=${btoa(defaultKey)}">default</a>` : "default";
-		const servicesValue = servicesKey ? `<a href="https://stoat.dev/diffs/github?ghOwner=stoat-dev&ghRepo=prefect&ghBranch=${metadata.github.branch}&ghPullRequest=${metadata.github.pull_request}&ghDefaultBranch=main&files=pip_freeze&variant=${btoa(servicesKey)}">default</a>` : "services";
+		const servicesValue = servicesKey ? `<a href="https://stoat.dev/diffs/github?ghOwner=stoat-dev&ghRepo=prefect&ghBranch=${metadata.github.branch}&ghPullRequest=${metadata.github.pull_request}&ghDefaultBranch=main&files=pip_freeze&variant=${btoa(servicesKey)}">services</a>` : "services";
 
 		output += `<td>${defaultValue} &bull; ${servicesValue}</td>`
 	});
