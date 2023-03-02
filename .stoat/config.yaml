@@ -1,7 +1,7 @@
 ---
 version: 1
 enabled: true
-comment_template_file: ".stoat/comment.hbs"
+comment_template_file: ".stoat/comment.js"
 plugins:
   job_runtime:
     enabled: true
